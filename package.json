@@ -1,0 +1,24 @@
+{
+  "name": "oidc-auth-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "q": "^1.4.1",
+    "request": "^2.73.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiosousa/HBP_OIDCAuthentication_Example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claudiosousa/HBP_OIDCAuthentication_Example/issues"
+  },
+  "homepage": "https://github.com/claudiosousa/HBP_OIDCAuthentication_Example#readme"
+}

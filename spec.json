@@ -1,0 +1,55 @@
+
+Request: GET /experiments[?contextId={collabcontextId}]
+
+{
+  "experiments": {
+    //list here the experiments
+    // - ALL experiments if request comming from esv-collab-edit/esv-web
+    // - only the CLONED experiment type if  request comming from esv-collab-run
+    "ExDTemplateICub": { //experiment object
+      "configuration": { //experiment configuration as er template
+        "description": "This experiment loads the iCub robot in an empty world, with an idle brain and basic transfer functions. You are free to edit it.",
+        "name": "Empty Template iCub experiment",
+        "experimentConfiguration": "ExDConf/ExDTemplateICub.xml",
+        "timeout": 840,
+        ...
+      },
+      "availableServers": [ // Available servers are sorted by health
+        "bbpsrvc029",
+        "bbpsrvc030"
+      ],
+      "joinableServers": [
+        //List of servers running the same experiment id, filtered by collab context id:
+        // - without a collab context id if request comming from esv-collab-edit/esv-web
+        // - with the same collab context id as the clone experiment if  request comming from esv-collab-run
+        {
+          "server": "bbpsrvc030",
+          "runningSimulation": {
+            "status": "paused",
+            "time": "5:30"...
+          }
+        },
+      ]
+    },
+    ....
+  }
+}
+
+Request: GET /server?server={id}
+{ //returns the server configuration object as per config file
+  "gzweb": {
+    "assets": "https://neurorobotics-dev.humanbrainproject.eu/cle/5/assets",
+    "nrp-services": "https://neurorobotics-dev.humanbrainproject.eu/cle/5/api",
+    "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/5/ws/gzbridge"
+  },
+  "rosbridge": {
+    "topics": {
+      "spikes": "/monitor/spike_recorder",
+      "joint": "/joint_states",
+      "status": "/ros_cle_simulation/status",
+      "cleError": "/ros_cle_simulation/cle_error"
+    },
+    "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/5/ws"
+  },
+  "serverJobLocation": "lugano"
+}
