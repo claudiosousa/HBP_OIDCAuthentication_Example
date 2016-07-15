@@ -1,0 +1,111 @@
+{
+  "auth": {
+    "clientId": "0dcfb392-32c7-480c-ae18-cbaf29e8a6b1",
+    "clientSecret": "",
+    "url": "https://services.humanbrainproject.eu/oidc"
+  },
+  "servers": {
+    "geneva1": {
+      "gzweb": {
+        "assets": "https://neurorobotics-dev.humanbrainproject.eu/cle/1/assets",
+        "nrp-services": "https://neurorobotics-dev.humanbrainproject.eu/cle/1/api",
+        "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/1/ws/gzbridge"
+      },
+      "rosbridge": {
+        "topics": {
+          "spikes": "/monitor/spike_recorder",
+          "joint": "/joint_states",
+          "status": "/ros_cle_simulation/status",
+          "cleError": "/ros_cle_simulation/cle_error"
+        },
+        "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/1/ws"
+      },
+      "serverJobLocation": "lugano"
+    },
+    "geneva2": {
+      "gzweb": {
+        "assets": "https://neurorobotics-dev.humanbrainproject.eu/cle/2/assets",
+        "nrp-services": "https://neurorobotics-dev.humanbrainproject.eu/cle/2/api",
+        "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/2/ws/gzbridge"
+      },
+      "rosbridge": {
+        "topics": {
+          "spikes": "/monitor/spike_recorder",
+          "joint": "/joint_states",
+          "status": "/ros_cle_simulation/status",
+          "cleError": "/ros_cle_simulation/cle_error"
+        },
+        "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/2/ws"
+      },
+      "serverJobLocation": "lugano"
+    },
+    "geneva3": {
+      "gzweb": {
+        "assets": "https://neurorobotics-dev.humanbrainproject.eu/cle/3/assets",
+        "nrp-services": "https://neurorobotics-dev.humanbrainproject.eu/cle/3/api",
+        "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/3/ws/gzbridge"
+      },
+      "rosbridge": {
+        "topics": {
+          "spikes": "/monitor/spike_recorder",
+          "joint": "/joint_states",
+          "status": "/ros_cle_simulation/status",
+          "cleError": "/ros_cle_simulation/cle_error"
+        },
+        "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/3/ws"
+      },
+      "serverJobLocation": "lugano"
+    },
+    "lugano4": {
+      "gzweb": {
+        "assets": "https://neurorobotics-dev.humanbrainproject.eu/cle/4/assets",
+        "nrp-services": "https://neurorobotics-dev.humanbrainproject.eu/cle/4/api",
+        "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/4/ws/gzbridge"
+      },
+      "rosbridge": {
+        "topics": {
+          "spikes": "/monitor/spike_recorder",
+          "joint": "/joint_states",
+          "status": "/ros_cle_simulation/status",
+          "cleError": "/ros_cle_simulation/cle_error"
+        },
+        "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/4/ws"
+      },
+      "serverJobLocation": "lugano"
+    },
+    "lugano5": {
+      "gzweb": {
+        "assets": "https://neurorobotics-dev.humanbrainproject.eu/cle/5/assets",
+        "nrp-services": "https://neurorobotics-dev.humanbrainproject.eu/cle/5/api",
+        "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/5/ws/gzbridge"
+      },
+      "rosbridge": {
+        "topics": {
+          "spikes": "/monitor/spike_recorder",
+          "joint": "/joint_states",
+          "status": "/ros_cle_simulation/status",
+          "cleError": "/ros_cle_simulation/cle_error"
+        },
+        "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/5/ws"
+      },
+      "serverJobLocation": "lugano"
+    },
+    "lugano6": {
+      "gzweb": {
+        "assets": "https://neurorobotics-dev.humanbrainproject.eu/cle/6/assets",
+        "nrp-services": "https://neurorobotics-dev.humanbrainproject.eu/cle/6/api",
+        "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/6/ws/gzbridge"
+      },
+      "rosbridge": {
+        "topics": {
+          "spikes": "/monitor/spike_recorder",
+          "joint": "/joint_states",
+          "status": "/ros_cle_simulation/status",
+          "cleError": "/ros_cle_simulation/cle_error"
+        },
+        "websocket": "wss://neurorobotics-dev.humanbrainproject.eu/cle/6/ws"
+      },
+      "serverJobLocation": "lugano"
+    }
+  }
+}
